@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.clock {
+  width: 70%;
+  margin: auto;
+  height: max-content;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.clocks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clocks #time {
+  height: 120px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: sandybrown;
+}
+
+#time div:first-child {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+#time div:last-child {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+#time:nth-child(2) {
+  background-color: cornflowerblue;
+}
+
+#time:last-child {
+  background-color: yellowgreen;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  .clocks #time {
+    height: 150px;
+    width: 120px;
+  }
+}
